@@ -1,0 +1,193 @@
+.bulkmail-conditions-thickbox{
+	box-sizing: border-box;
+	padding: 20px;
+	position: relative;
+	height: 100%;
+	min-height: 100%;
+}
+.bulkmail-conditions{
+	height: 100%;
+}
+.bulkmail-conditions-thickbox .inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 56px;
+	overflow: hidden;
+	padding: 10px 20px;
+}
+.bulkmail-conditions-thickbox .foot{
+	padding: 16px 20px 20px;
+	border-top: 1px solid #DFDFDF;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.bulkmail-conditions-thickbox .button{
+	float: right;
+	margin-left: 6px;
+}
+.rtl .bulkmail-conditions-thickbox .button{
+	float: left;
+	margin-left: 0;
+	margin-right: 6px;
+}
+.bulkmail-conditions-saved{
+	text-align: right;
+}
+.bulkmail-conditions-saved select{
+	width: 40%;
+}
+.bulkmail-conditions-wrap .bulkmail-condition-group{
+	border: 1px solid #DFDFDF;
+	background: #fdfdfd;
+	border-radius: 3px;
+	margin: 8px 0 25px;
+	padding: 0 10px 36px;
+	display: block;
+	position: relative;
+}
+.bulkmail-conditions-wrap .bulkmail-condition-group:after, .bulkmail-conditions-wrap .bulkmail-condition:after{
+	content: attr(data-operator);
+	position: absolute;
+	left: 30px;
+	padding: 3px 1px;
+	text-transform: uppercase;
+	color: #999;
+	font-size: 16px;
+	line-height: 1em;
+	transform: translateX(-50%);
+	z-index: 1;
+	bottom: -25px;
+}
+.bulkmail-conditions-wrap .bulkmail-condition:after{
+	background-color: #fff;
+	font-size: 14px;
+	bottom: -10px;
+	left: 20px;
+}
+.bulkmail-conditions-wrap .bulkmail-condition-group:last-child:after, .bulkmail-conditions-wrap .bulkmail-condition:last-child:after{
+	display: none;
+}
+.bulkmail-conditions-wrap .bulkmail-condition-group:last-child, .bulkmail-conditions-wrap .bulkmail-condition:last-child{
+	margin-bottom: 0;
+}
+.bulkmail-conditions-wrap .bulkmail-condition, .bulkmail-conditions-wrap .bulkmail-condition-empty{
+	border-bottom: 1px dotted #DFDFDF;
+	background-color: #fff;
+	position: relative;
+	padding: 10px 0 10px;
+}
+.bulkmail-conditions-wrap{
+	margin: 10px 0;
+	height: 83%;
+	overflow: auto;
+}
+.bulkmail-condition-container{
+	display: none;
+}
+.bulkmail-conditions-field-fields, .bulkmail-conditions-operator-fields, .bulkmail-conditions-value-fields{
+	float: left;
+	max-width: 37%;
+	padding-right: 4px;
+}
+.rtl .bulkmail-conditions-field-fields,.rtl .bulkmail-conditions-operator-fields,.rtl .bulkmail-conditions-value-fields{
+	float: right;
+	padding-right: 0px;
+	padding-left: 4px;
+}
+.bulkmail-conditions-operator-fields{
+	max-width: 140px;
+}
+.bulkmail-conditions-value-fields{
+}
+.bulkmail-conditions-operator-field, .bulkmail-conditions-value-field{
+	display: none;
+}
+.bulkmail-conditions-operator-field.active, .bulkmail-conditions-value-field.active{
+	display: block;
+}
+.bulkmail-conditions-wrap select, .bulkmail-conditions-wrap input{
+	max-width: 100%
+}
+.bulkmail-conditions-wrap .bulkmail-condition-empty{
+	background-color: none;
+	border: 1px dotted #DFDFDF;
+	text-align: center;
+}
+.bulkmail-conditions-wrap .remove-condition{
+	float: right;
+	cursor: pointer;
+	visibility: hidden;
+	margin-bottom: 10px;
+	padding: 0 4px;
+}
+.rtl .bulkmail-conditions-wrap .remove-condition{
+	float: left;
+}
+.bulkmail-conditions-wrap .bulkmail-condition:hover .remove-condition{
+	visibility: visible;
+}
+.bulkmail-conditions-wrap .add-or-condition{
+	position: absolute;
+	bottom: 6px;
+	z-index: 1;
+}
+.bulkmail-conditions-wrap .add-or-condition span{
+	text-transform: uppercase;
+}
+.bulkmail-conditions-wrap .datepicker.condition-value{
+	width: 100px;
+}
+.bulkmail-condition .bulkmail-conditions-value-field p, .bulkmail-condition .bulkmail-conditions-value-field ul{
+	margin: 0;
+}
+.bulkmail-condition-render span.bulkmail-condition-type {
+	float: left;
+	padding-right: 4px;
+}
+.rtl .bulkmail-condition-render span.bulkmail-condition-type {
+	float: right;
+	padding-right: 0;
+	padding-left: 4px;
+}
+.bulkmail-condition .bulkmail-rating span{
+	color: #e6b800;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 3px 0;
+}
+.bulkmail-condition .bulkmail-rating span:before{
+	content: '\e82e';
+}
+.bulkmail-condition .bulkmail-rating span.enabled:before{
+	content: '\e82d';
+}
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect:first-child{
+	display: inline-block;
+}
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect .condition-value{
+	width: 180px;
+}
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect a.bulkmail-condition-add-multiselect, .bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect:first-child span{
+	visibility: hidden;
+}
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect a{
+	cursor: pointer;
+}
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect:hover a.bulkmail-condition-remove-multiselect{
+	visibility: visible;
+}
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect a.bulkmail-condition-remove-multiselect{
+	visibility: hidden;
+}
+
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect:last-child a.bulkmail-condition-add-multiselect{
+	visibility: visible;
+}
+.bulkmail-conditions-wrap .bulkmail-conditions-value-field-multiselect:first-child a.bulkmail-condition-remove-multiselect{
+	visibility: hidden !important;
+}
